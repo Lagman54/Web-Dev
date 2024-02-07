@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FaceBook - Выполните вход или зарегистрируйтесь</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        h2 {
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 32px;
+            width: 500px;
+            padding: 0 0 20px;
+        }
+
+        form {
+            padding: 10px 0 24px;
+            width: 396px;
+            background: #ffffff;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            float: right;
+            clear: both;
+        }
+
+        input {
+            padding: 14px 16px;
+            margin: 6px 0;
+            background: #ffffff;
+            width: 330px;
+            height: 22px;
+            font-size: 17px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #dadde1;
+        }
+
+        button {
+            border: none;
+            border-radius: 6px;
+            line-height: 48px;
+            padding: 0 16px;
+            font-weight: bold;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        #break1 {
+            margin: 20px 16px;
+        }
+
+        #forgotPass {
+            color: #1877f2;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 16px 0;
+            display: block;
+            cursor: pointer;
+        }
+
+        #login {
+            width: 364px;
+            font-size: 20px;
+            background-color: #1877f2;
+            margin-top: 8px;
+        }
+
+        #create {
+            background-color: #42b72a;
+            font-size: 17px;
+            margin-top: 6px;
+        }
+
+        #main {
+            background-color: #f0f2f5;
+            padding: 72px 184px 112px;
+        }
+
+        #logo {
+            padding: 112px 0 16px;
+            height: 106px;
+            margin: -28px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="main">
+
+
+    <img id="logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook"/>
+    <h2>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h2>
+    <form>
+        <input type="email" placeholder="Электронный адрес или номер телефона"><br>
+        <input type="password" placeholder="Пароль">
+        <button id="login" type="submit">Вход</button>
+        <a id="forgotPass" href="">Забыли пароль?</a>
+        <hr id="break1">
+        <button id="create" type="button">Создать новый аккаунт</button>
+    </form>
+
+</div>
+
+
+</body>
+</html>
