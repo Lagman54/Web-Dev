@@ -3,126 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <title>FaceBook - Выполните вход или зарегистрируйтесь</title>
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 12px;
-        }
-
-        h2 {
-            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
-            font-size: 28px;
-            font-weight: normal;
-            line-height: 32px;
-            width: 500px;
-            padding: 0 0 20px;
-        }
-
-        form {
-            padding: 10px 0 24px;
-            width: 396px;
-            background: #ffffff;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
-            float: right;
-            clear: both;
-        }
-
-        input {
-            padding: 14px 16px;
-            margin: 6px 0;
-            background: #ffffff;
-            width: 330px;
-            height: 22px;
-            font-size: 17px;
-            border: 1px solid #dddfe2;
-            border-radius: 6px;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        hr {
-            border: none;
-            height: 1px;
-            background-color: #dadde1;
-        }
-
-        button {
-            border: none;
-            border-radius: 6px;
-            line-height: 48px;
-            padding: 0 16px;
-            font-weight: bold;
-            color: #ffffff;
-            cursor: pointer;
-        }
-
-        #break1 {
-            margin: 20px 16px;
-        }
-
-        #forgotPass {
-            color: #1877f2;
-            font-size: 14px;
-            font-weight: 500;
-            margin: 16px 0;
-            display: block;
-            cursor: pointer;
-        }
-
-        #login {
-            width: 364px;
-            font-size: 20px;
-            background-color: #1877f2;
-            margin-top: 8px;
-        }
-
-        #create {
-            background-color: #42b72a;
-            font-size: 17px;
-            margin-top: 6px;
-        }
-
-        #main {
-            background-color: #f0f2f5;
-            padding: 72px 184px 112px;
-        }
-
-        #logo {
-            padding: 112px 0 16px;
-            height: 106px;
-            margin: -28px;
-        }
-
-
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-<div id="main">
+<main>
 
+    <div class="left-block">
+        <img id="logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook"/>
+        <h2>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h2>
+    </div>
 
-    <img id="logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook"/>
-    <h2>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h2>
-    <form>
-        <input type="email" placeholder="Электронный адрес или номер телефона"><br>
-        <input type="password" placeholder="Пароль">
-        <button id="login" type="submit">Вход</button>
-        <a id="forgotPass" href="">Забыли пароль?</a>
-        <hr id="break1">
-        <button id="create" type="button">Создать новый аккаунт</button>
-    </form>
+    <div class="right-block">
+        <form>
+            <input type="email" placeholder="Электронный адрес или номер телефона"><br>
+            <input type="password" placeholder="Пароль">
+            <button class="btn-login" type="submit">Вход</button>
+            <a id="forget-password" href="">Забыли пароль?</a>
+            <hr id="break1">
+            <button class="btn-create" type="button">Создать новый аккаунт</button>
+        </form>
+        <p class="right-text">
+            <a id="create-page" href="">Создать Страницу</a>
+            знаменитости, музыкальной группы или компании.
+        </p>
+    </div>
+</main>
 
-</div>
+<footer>
 
+    <div class="footer-content">
+        <ul class="languages">
+            <li>Русский</li>
+            <li><a href="#">English (US)</a></li>
+            <li><a href="#">Türkçe</a></li>
+            <li><a href="#">Bahasa Indonesia</a></li>
+            <li><a href="#">(简体)</a></li>
+            <li><a href="#">Қазақша</a></li>
+            <li><a href="#">Deutsch</a></li>
+            <li><a href="#">한국어</a></li>
+            <li><a href="#">Shqip</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Português (Brasil)</a></li>
+            <li><a href="#" class="btn-another-language">+</a></li>
+        </ul>
+        <hr style="margin-left:-8px">
+        <ul class="link-list">
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Вход</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Facebook Lite</a></li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Места</a></li>
+            <li><a href="#">Игры</a></li>
+            <li><a href="#">Market place</a></li>
+            <li><a href="#">Meta play</a></li>
+            <li><a href="#">Meta Store</a></li>
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Вход</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Facebook Lite</a></li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Места</a></li>
+            <li><a href="#">Игры</a></li>
+            <li><a href="#">Market place</a></li>
+            <li><a href="#">Meta play</a></li>
+            <li><a href="#">Meta Store</a></li>
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Вход</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Facebook Lite</a></li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Места</a></li>
+            <li><a href="#">Игры</a></li>
+            <li><a href="#">Market place</a></li>
+            <li><a href="#">Meta play</a></li>
+            <li><a href="#">Meta Store</a></li>
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Вход</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Facebook Lite</a></li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Места</a></li>
+            <li><a href="#">Игры</a></li>
+            <li><a href="#">Market place</a></li>
+            <li><a href="#">Meta play</a></li>
+            <li><a href="#">Meta Store</a></li>
+            <li><a href="#">Facebook Lite</a></li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Места</a></li>
+            <li><a href="#">Игры</a></li>
+            <li><a href="#">Market place</a></li>
+            <li><a href="#">Meta play</a></li>
+            <li><a href="#">Meta Store</a></li>
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Вход</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Facebook Lite</a></li>
+            <li><a href="#">Видео</a></li>
+            <li><a href="#">Места</a></li>
+            <li><a href="#">Игры</a></li>
+            <li><a href="#">Market place</a></li>
+            <li><a href="#">Meta play</a></li>
+        </ul>
+
+        <br>
+
+        <span style="margin-left:-8px">Meta © 2024</span>
+
+    </div>
+
+</footer>
 
 </body>
 </html>
