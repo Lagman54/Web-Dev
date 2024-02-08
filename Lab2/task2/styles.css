@@ -56,7 +56,7 @@ li:first-child {
 
 main {
     height: 536px;
-    padding: 109px 180px 100px;
+    padding: 50px 180px 100px;
     display: flex;
     justify-content: center;
 }
