@@ -12,17 +12,11 @@ header {
     padding: 0 65px;
 }
 
-li {
-    padding: 12px 10px 10px;
-    display: inline;
-}
-
-
-
 .logo {
     width: 108px;
     height: 23px;
     padding: 14px 22px 16px 10px;
+    cursor: pointer;
 }
 
 .menu {
@@ -36,8 +30,19 @@ li {
     align-items: center;
 }
 
+li {
+    padding: 12px 10px 10px;
+    display: inline;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    text-decoration: underline;
+}
+
 .actions {
-    padding: 16px 20px 16px 15px;
+    display: flex;
+    align-items: center;
     font-size: 13px;
 }
 
@@ -45,20 +50,112 @@ li {
     background: transparent;
     border: none;
     color: #262626;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    text-decoration: underline;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
 }
 
 .arrow-down {
-    position: absolute;
-    padding-top: 2px;
+    padding-top: 14px;
     padding-left: 4px;
     font-size: 22px;
     width: 16px;
 }
 
 .slider {
+    position: relative;
     padding: 0 6px;
 }
 
 .slider img {
     width: 100%;
+}
+
+.left-block {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    margin-left: 48px;
+}
+
+.title {
+    margin-top: 24px;
+    color: white;
+    width: 316px;
+    font-size: 1.8125rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+
+.description {
+    margin-top: 18px;
+    color: white;
+    width: 316px;
+    font-size: 16px;
+}
+
+.btn1 {
+    margin-top: 28px;
+    color: white;
+    background-color: #0067b8;
+    padding: 10px 12px;
+    width: 260px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: #385185;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    padding: 54px;
+}
+
+.product-card {
+    padding: 16px;
+    flex-basis: 25%;
+    line-height: 1.8;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card h2 {
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.product-card p {
+    line-height: 1.4;
+}
+
+.product-card a {
+    position: absolute;
+    color: #0067b8;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.product-card a:hover {
+    text-decoration: underline;
 }
