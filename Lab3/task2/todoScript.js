@@ -2,14 +2,26 @@ let addTaskButton = document.getElementById("btn-add")
 let todoList = document.getElementById("todo-list")
 let taskNameInput = document.getElementById("taskNameInput")
 
+taskNameInput.addEventListener('keypress', function (event) {
+    if(event.key === "Enter" && taskNameInput.value.trim() !== "") {
+        addTask()
+    }
+})
+
 addTaskButton.addEventListener('click', function() {
+    if(taskNameInput.value.trim() !== "") {
+        addTask()
+    }
+})
+
+function addTask() {
     let todo = document.createElement("div")
     let taskName = document.createElement("span")
     let checkBox = document.createElement("input")
     let deleteButton = document.createElement("button")
     let buttonImage = document.createElement("img")
 
-    taskName.innerText = taskNameInput.value
+    taskName.innerText = taskNameInput.value.trim()
 
     checkBox.type = "checkbox"
     checkBox.addEventListener('change', function () {
@@ -35,4 +47,4 @@ addTaskButton.addEventListener('click', function() {
 
     taskNameInput.value = ""
     todoList.appendChild(todo)
-});
+}
