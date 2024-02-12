@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    background: #262626;
+}
+
+form {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    color: #8a8d91;
+    padding: 18px 0 18px 80px;
+}
+
+.block1 {
+    margin: 69px auto auto;
+    width: 680px;
+}
+
+.block1 h1 {
+    font-weight: 500;
+}
+
+#taskNameInput {
+    width: 480px;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccd0d5;
+}
+
+#btn-add {
+    padding: 9px 12px;
+    margin-left: 16px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+#todo-list {
+    margin-top: 32px;
+}
+
+.todo-task {
+    display: flex;
+    padding: 16px;
+    border: 1px solid #ccd0d5;
+    border-radius: 3px;
+}
+
+.todo-task span {
+    padding-left: 48px;
+    width: 100%;
+}
+
+.btn-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-delete img {
+    height: 18px;
+    margin-right: 24px;
+    margin-top: 3px;
+}
