@@ -1,8 +1,29 @@
 <h2>Product Details</h2>
 
-<div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
-  <button type="button" (click)="addToCart(product)">Add to Cart</button>
+<div *ngIf="product" style="margin-bottom: 60px">
+    <h3>{{ product.name }}</h3>
+    <img width="150x" [src]="product.imageUrl" alt="">
+    <p>Rating: {{ product.rating }}</p>
+    <h4>{{ product.price | currency:'KZT':'symbol-narrow':'.0' }}</h4>
+    <p>{{ product.description }}</p>
+
+    <a [href]="product.url">
+        <button type="button">Open in Kaspi</button>
+    </a>
+
+    <br>
+    <br>
+
+    <button type="button" (click)="addToCart(product)">Add to Cart</button>
+
+    <br>
+    <br>
+
+    <a href="https://api.whatsapp.com/send/?text={{ product.url }}">
+        <i class="fa fa-whatsapp" style="color:green;font-size: 32px"></i>
+    </a>
+    <a href="https://t.me/share/url?url={{ product.url }}&text={{ product.name }}">
+        <i class="fa fa-telegram" style="color:deepskyblue;font-size: 32px;margin-left: 32px"></i>
+    </a>
+
 </div>
