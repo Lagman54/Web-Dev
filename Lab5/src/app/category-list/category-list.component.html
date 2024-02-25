@@ -1,0 +1,6 @@
+<div class="container">
+    <div [routerLink]="['/category', category.id]" class="category" *ngFor="let category of categories">
+        <img [src]="category.imgUrl"/>
+        <span>{{ category.name}} </span>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="wrapper">
+
+    <div [routerLink]="['/products', product.id]" class="product">
+        <img [src]="product.imageUrl">
+        <span>{{ product.name }}</span>
+    </div>
+
+    <div class="container" style="align-items: baseline">
+        <i class="fa fa-thumbs-up fa-3x" (click)="like()"></i>
+        <span class="like-count">{{ likes }}</span>
+        <i class="fa fa-times fa-3x" (click)="deleteItem()"></i>
+    </div>
+
+</div>
