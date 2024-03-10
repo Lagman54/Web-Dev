@@ -1,0 +1,22 @@
+.container {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+div {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 16px;
+    font-size: 24px;
+}
+
+input {
+    border: 0px;
+    font-size: 24px;
+}
+
+button {
+    font-size: 16px;
+    padding: 4px;
+    margin-top: 12px;
+}

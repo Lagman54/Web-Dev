@@ -1,0 +1,12 @@
+<div>
+    <a routerLink="../">Go back</a>
+    <br>
+    <form (submit)="onSubmit()">
+        <label for="name">Title: </label>
+        <input id="name" type="text" [formControl]="albumName" /><br>
+        <button>{{ save }}</button>
+    </form>
+    <br>
+    <!-- <p>{{ albumName.value }}</p> -->
+    <a routerLink="./photos">Photos</a>
+</div>

@@ -1,0 +1,8 @@
+<a routerLink="../">Go back</a>
+
+<p>Album: {{ album.title }}</p>
+
+<div *ngFor="let photo of photos" class="photo">
+    <img [src]="photo.url">
+    {{ photo.title }}
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+    <h2>Albums</h2>
+    
+    <div *ngFor="let album of albums" [routerLink]="['/albums', album.id]" class="album">
+        {{ album.title }}
+
+        <i class="fa fa-times" (click)="onDelete(album.id, $event)"></i>
+    </div>
+</div>
